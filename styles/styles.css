@@ -1,0 +1,118 @@
+:root {
+  /* colors */
+  --background-color: #eee;
+  --border-color: #888;
+  --text-color: #555;
+
+  /* fonts */
+  --body-font-family: forma-djr-display, sans-serif;
+  --heading-font-family: var(--body-font-family);
+
+  /* body sizes */
+  --body-font-size-m: 22px;
+  --body-font-size-s: 18px;
+  --body-font-size-xs: 12px;
+
+  /* heading sizes */
+  --heading-font-size-xxl: 42px;
+  --heading-font-size-xl: 36px;
+  --heading-font-size-l: 32px;
+  --heading-font-size-m: 26px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 12px;
+
+  /* general layout */
+  --padding: 0 40px;
+  --padding-right: 40px;
+
+  /* nav & footer height */
+  --nav-height: 64px;
+  --footer-height: 50px;
+
+  /* input styling */
+  --border-radius: 1px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 50px;
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--body-font-size-m);
+  letter-spacing: 4px;
+  background-color: var(--background-color);
+  display: block;
+}
+
+h1 { font-size: var(--heading-font-size-xxl); }
+
+@media (max-width: 700px) {
+  body { font-size: var(--body-font-size-s); }
+  h1 { font-size: var(--heading-font-size-l); }
+}
+
+main {
+  padding: var(--padding);
+}
+
+footer {
+  font-size: var(--heading-font-size-xs);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: var(--footer-height);
+  text-align: center;
+  color: white;
+  padding: var(--padding);
+  padding-top: 8px;
+  box-sizing: border-box;
+  background-color: #888;
+  border-top: 0.5px solid var(--border-color);
+}
+
+#msg {
+  margin: 20px 0;
+  font-style: italic;
+  font-size: var(--heading-font-size-s);
+}
+
+#vocabulary {
+  display: grid;
+  column-gap: 12px;
+  row-gap: 12px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 60px;
+}
+
+#inputs {
+  display: inline-flex;
+  margin: 12px 0;
+  width: 100%;
+}
+
+#sheet {
+  padding: 12px;
+  margin-right: 8px;
+  width: 100%;
+  border-radius: 4px;
+  border-width: 1px;
+  font-size: var(--heading-font-size-s);
+}
+
+#start {
+  border-color: transparent;
+  background: transparent;
+}
+
+img.mic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 4px #444);
+}
