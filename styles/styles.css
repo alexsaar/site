@@ -52,10 +52,7 @@ body {
 
 h1 { font-size: var(--heading-font-size-xxl); }
 
-@media (max-width: 700px) {
-  body { font-size: var(--body-font-size-s); }
-  h1 { font-size: var(--heading-font-size-l); }
-}
+#headline { text-align: center; }
 
 main {
   padding: var(--padding);
@@ -74,45 +71,4 @@ footer {
   box-sizing: border-box;
   background-color: #888;
   border-top: 0.5px solid var(--border-color);
-}
-
-#msg {
-  margin: 20px 0;
-  font-style: italic;
-  font-size: var(--heading-font-size-s);
-}
-
-#vocabulary {
-  display: grid;
-  column-gap: 12px;
-  row-gap: 12px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 60px;
-}
-
-#inputs {
-  display: inline-flex;
-  margin: 12px 0;
-  width: 100%;
-}
-
-#sheet {
-  padding: 12px;
-  margin-right: 8px;
-  width: 100%;
-  border-radius: 4px;
-  border-width: 1px;
-  font-size: var(--heading-font-size-s);
-}
-
-#start {
-  border-color: transparent;
-  background: transparent;
-}
-
-img.mic {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  filter: drop-shadow(0 0 4px #444);
 }
